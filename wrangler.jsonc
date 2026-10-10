@@ -1,0 +1,19 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "appzed-governance",
+  "main": "worker.js",
+  "compatibility_date": "2025-09-01",
+  "ai": {
+    "binding": "AI"
+  },
+  "kv_namespaces": [
+    {
+      "binding": "GOV"
+    }
+  ],
+  "triggers": {
+    "crons": [
+      "17 6 * * *"
+    ]
+  }
+}
